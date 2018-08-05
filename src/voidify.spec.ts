@@ -1,10 +1,11 @@
 import { expect } from 'chai'
 import voidify from './voidify'
-import identity from './identity'
+
+const id = (arg: number) => arg
 
 describe('[ voidify ]', () => {
   it('should work', () => {
-    const result = voidify(identity)('value')
-    expect(result).eq(undefined)
+    const voided = voidify(id)
+    expect(voided(42)).eq(undefined)
   })
 })

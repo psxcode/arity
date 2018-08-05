@@ -1,4 +1,3 @@
-const nullary = <R> (fn: (...args: any[]) => R) =>
-  (..._: any[]): R => fn()
+const nullary = <R> (fn: (...args: any[]) => R) => (): R => fn()
 
 export default nullary

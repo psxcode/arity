@@ -1,5 +1,5 @@
-const voidify = (fn: (...args: any[]) => any) =>
-  (...args: any[]): void => {
+const voidify = <ARGS extends any[], R> (fn: (...args: ARGS) => R) =>
+  (...args: ARGS): void => {
     fn(...args)
   }
 
