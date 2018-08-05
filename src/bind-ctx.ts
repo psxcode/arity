@@ -1,6 +1,6 @@
-function bindCtx <F> (fn: F, ctx: any): F
-function bindCtx (fn: any, ctx: any) {
-  return (...args: any[]) => fn.apply(ctx, args)
+function bindCtx <T> (ctx: T): <ARGS extends any[], R> (fn: (this: T, ...args: ARGS) => R) => (...args: ARGS) => R
+function bindCtx (ctx: any) {
+  return (fn: any) => (...args: any[]) => fn.apply(ctx, args)
 }
 
 export default bindCtx
