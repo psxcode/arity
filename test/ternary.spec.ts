@@ -1,12 +1,16 @@
-import * as sinon from 'sinon'
+import { describe, it } from 'mocha'
+import { expect } from 'chai'
+import { createSpy, getSpyCalls } from 'spyfn'
 import ternary from '../src/ternary'
 
 describe('[ ternary ]', () => {
   it('should work', () => {
-    const spy = sinon.spy()
+    const spy = createSpy(() => {})
     const un = ternary(spy);
     (un as any)('a', 'b', 'c', 'd')
-    sinon.assert.calledOnce(spy)
-    sinon.assert.calledWithExactly(spy, 'a', 'b', 'c')
+
+    expect(getSpyCalls(spy)).deep.eq([
+      ['a', 'b', 'c'],
+    ])
   })
 })

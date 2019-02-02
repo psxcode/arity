@@ -1,3 +1,5 @@
+import { describe, it } from 'mocha'
+import { expect } from 'chai'
 import spread from '../src/spread'
 
 describe('[ spread ]', () => {
@@ -6,6 +8,7 @@ describe('[ spread ]', () => {
       void a
       void b
       void c
+
       return 42
     }
     const f = spread(spy)

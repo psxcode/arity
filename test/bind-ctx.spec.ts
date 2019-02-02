@@ -1,3 +1,4 @@
+import { describe, it } from 'mocha'
 import { expect } from 'chai'
 import bindCtx from '../src/bind-ctx'
 
@@ -8,7 +9,7 @@ function getFromCtx (this: { val0: number }) {
 describe('[ bindCtx ]', () => {
   it('should work as a constant', () => {
     const ctx = {
-      val0: 0
+      val0: 0,
     }
     const binded = bindCtx(ctx)(getFromCtx)
     expect(binded() === 0).eq(true)

@@ -1,12 +1,16 @@
-import * as sinon from 'sinon'
+import { describe, it } from 'mocha'
+import { createSpy, getSpyCalls } from 'spyfn'
+import { expect } from 'chai'
 import binary from '../src/binary'
 
 describe('[ binary ]', () => {
   it('should work', () => {
-    const spy = sinon.spy()
+    const spy = createSpy(() => {})
     const un = binary(spy);
     (un as any)('a', 'b', 'c')
-    sinon.assert.calledOnce(spy)
-    sinon.assert.calledWithExactly(spy, 'a', 'b')
+
+    expect(getSpyCalls(spy)).deep.eq([
+      ['a', 'b'],
+    ])
   })
 })

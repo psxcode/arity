@@ -1,4 +1,6 @@
 .idea
 .npmrc
+coverage
+.nyc_output
 node_modules
 build
