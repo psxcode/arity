@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import branch from './branch'
+import branch from '../src/branch'
 
 describe('[ branch ]', () => {
   it('should work', async () => {

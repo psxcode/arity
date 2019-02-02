@@ -1,4 +1,4 @@
-import spread from './spread'
+import spread from '../src/spread'
 
 describe('[ spread ]', () => {
   it('should work', () => {

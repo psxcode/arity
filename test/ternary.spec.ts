@@ -1,5 +1,5 @@
 import * as sinon from 'sinon'
-import ternary from './ternary'
+import ternary from '../src/ternary'
 
 describe('[ ternary ]', () => {
   it('should work', () => {

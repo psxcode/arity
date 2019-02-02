@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import voidify from './voidify'
+import voidify from '../src/voidify'
 
 const id = (arg: number) => arg
 

@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import bindCtx from './bind-ctx'
+import bindCtx from '../src/bind-ctx'
 
 function getFromCtx (this: { val0: number }) {
   return this.val0

@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import constant from './constant'
+import constant from '../src/constant'
 
 describe('[ constant ]', () => {
   it('should return same value', () => {

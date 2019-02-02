@@ -1,5 +1,5 @@
 import * as sinon from 'sinon'
-import binary from './binary'
+import binary from '../src/binary'
 
 describe('[ binary ]', () => {
   it('should work', () => {

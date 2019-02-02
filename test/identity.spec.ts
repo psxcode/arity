@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import identity from './identity'
+import identity from '../src/identity'
 
 describe('[ identity ]', () => {
   it('should return same value', () => {

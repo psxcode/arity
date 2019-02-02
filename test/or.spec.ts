@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import or from './or'
+import or from '../src/or'
 
 describe('[ or ]', () => {
   it('should work', async () => {

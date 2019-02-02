@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import bindProps from './bind-props'
+import bindProps from '../src/bind-props'
 
 const addNamed = <S0 extends string, S1 extends string>(a: S0, b: S1) =>
   (p: { [k in S0 | S1]: number }) => p[a] + p[b]

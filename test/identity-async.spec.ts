@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import identityAsync from './identity-async'
+import identityAsync from '../src/identity-async'
 
 describe('[ identityAsync ]', () => {
   it('should return same value', async () => {

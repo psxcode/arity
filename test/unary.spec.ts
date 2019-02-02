@@ -1,12 +1,12 @@
 import * as sinon from 'sinon'
-import nullary from './nullary'
+import unary from '../src/unary'
 
-describe('[ nullary ]', () => {
+describe('[ unary ]', () => {
   it('should work', () => {
     const spy = sinon.spy()
-    const un = nullary(spy);
+    const un = unary(spy);
     (un as any)('a', 'b', 'c')
     sinon.assert.calledOnce(spy)
-    sinon.assert.calledWithExactly(spy)
+    sinon.assert.calledWithExactly(spy, 'a')
   })
 })

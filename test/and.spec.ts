@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import and from './and'
+import and from '../src/and'
 
 describe('[ and ]', () => {
   it('should work', async () => {

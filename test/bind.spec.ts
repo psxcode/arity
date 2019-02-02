@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import bind from './bind'
+import bind from '../src/bind'
 
 const id = (value: number) => value
 const add = (a: number, b: number) => a + b

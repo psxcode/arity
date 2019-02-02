@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import constantAsync from './constant-async'
+import constantAsync from '../src/constant-async'
 
 describe('[ constantAsync ]', () => {
   it('should return same value', async () => {

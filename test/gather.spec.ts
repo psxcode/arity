@@ -1,5 +1,5 @@
 import { expect } from 'chai'
-import gather from './gather'
+import gather from '../src/gather'
 
 describe('[ gather ]', () => {
   it('should work', () => {
