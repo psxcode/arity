@@ -1,4 +1,7 @@
 # Arity
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/psxcode/arity.svg)](https://greenkeeper.io/)
+
 Functional helpers, with Typescript type propagation
 
 ### Install
